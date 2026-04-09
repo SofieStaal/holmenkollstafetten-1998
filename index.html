@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holmenkollstafetten 2026 — Velg din etappe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Lørdag 9. mai 2026 · Bislett Stadion</p>
+      <h1>Holmenkoll<span>stafetten</span></h1>
+      <p class="lede">15 etapper. Ett lag. Ønsk deg etappen som passer deg best.</p>
+      <div class="hero-meta">
+        <span class="pill">4 uker igjen</span>
+        <span class="pill">15 løpere</span>
+        <span class="pill">18,4 km totalt</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <div class="filters">
+        <button class="filter active" data-filter="all">Alle</button>
+        <button class="filter" data-filter="flat">Flatt</button>
+        <button class="filter" data-filter="climb">Motbakke</button>
+        <button class="filter" data-filter="downhill">Nedoverbakke</button>
+        <button class="filter" data-filter="hilly">Kupert</button>
+        <button class="filter" data-filter="no-wishes">Uten ønsker</button>
+        <span class="filter-divider" aria-hidden="true"></span>
+        <button class="filter sort-toggle" id="sort-length" aria-pressed="false">Lengde <span class="arrow">↑</span></button>
+      </div>
+    </section>
+
+    <section class="legs" id="legs"></section>
+  </main>
+
+  <footer>
+    <p><a href="https://holmenkollstafetten.no/løypekart" target="_blank" rel="noreferrer">Se offisielt løypekart</a></p>
+  </footer>
+
+  <dialog id="pick-dialog">
+    <form method="dialog">
+      <h2>Etappe <span id="dialog-leg-num"></span></h2>
+      <p id="dialog-leg-desc"></p>
+      <label>
+        Navnet ditt
+        <input type="text" id="runner-name" required maxlength="40" placeholder="F.eks. Brian" />
+      </label>
+      <div class="dialog-actions">
+        <button type="button" id="cancel">Avbryt</button>
+        <button type="submit" id="confirm">Ønsk deg denne</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
