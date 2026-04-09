@@ -68,7 +68,7 @@ html, body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(180deg, #000033 0%, #000080 40%, #0000aa 100%);
+  background: #c0c0c0;
   border-bottom: 3px solid var(--gold);
   padding: 48px 24px 40px;
   text-align: center;
@@ -104,36 +104,20 @@ html, body {
   text-shadow: 1px 1px 0 #996600;
 }
 
-.hero h1 {
-  font-family: Impact, 'Arial Black', sans-serif;
-  font-size: clamp(48px, 8vw, 88px);
-  font-weight: 700;
-  margin: 0 0 8px;
-  line-height: 1;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  animation: rainbow 4s linear infinite;
-  text-shadow:
-    3px 3px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    0 3px 0 #000;
-  -webkit-text-stroke: 1px rgba(0,0,0,0.3);
-}
-
-.hero h1 span {
+.wordart {
   display: block;
-  font-style: italic;
-  font-weight: 700;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto 8px;
+  height: auto;
 }
 
-.lede {
-  font-size: 18px;
-  color: #00ffff;
-  max-width: 480px;
-  margin: 24px auto 32px;
-  text-shadow: 0 0 8px rgba(0,255,255,0.5);
+.wordart-lede {
+  display: block;
+  max-width: 560px;
+  width: 100%;
+  margin: 16px auto 28px;
+  height: auto;
 }
 
 .hero-meta {

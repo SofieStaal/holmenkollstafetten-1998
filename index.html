@@ -13,8 +13,62 @@
   <header class="hero">
     <div class="hero-inner">
       <p class="eyebrow">Lørdag 9. mai 2026 · Bislett Stadion</p>
-      <h1>Holmenkoll<span>stafetten</span></h1>
-      <p class="lede">15 etapper. Ett lag. Ønsk deg etappen som passer deg best.</p>
+      <svg class="wordart" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" role="heading" aria-level="1" aria-label="Holmenkollstafetten">
+        <defs>
+          <linearGradient id="wordart-rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#ff0000"/>
+            <stop offset="14%"  stop-color="#ff8800"/>
+            <stop offset="28%"  stop-color="#ffdd00"/>
+            <stop offset="42%"  stop-color="#00cc00"/>
+            <stop offset="57%"  stop-color="#0088ff"/>
+            <stop offset="71%"  stop-color="#4400ff"/>
+            <stop offset="85%"  stop-color="#8800cc"/>
+            <stop offset="100%" stop-color="#ff0088"/>
+          </linearGradient>
+          <linearGradient id="wordart-shine" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%"   stop-color="rgba(255,255,255,0.6)"/>
+            <stop offset="45%"  stop-color="rgba(255,255,255,0)"/>
+            <stop offset="55%"  stop-color="rgba(255,255,255,0)"/>
+            <stop offset="100%" stop-color="rgba(255,255,255,0.2)"/>
+          </linearGradient>
+          <path id="wordart-arc" d="M 30,190 Q 450,30 870,190" fill="none"/>
+          <filter id="wordart-shadow">
+            <feDropShadow dx="4" dy="4" stdDeviation="1" flood-color="#000" flood-opacity="0.7"/>
+          </filter>
+        </defs>
+        <!-- 3D depth layers -->
+        <text font-family="Impact,'Arial Black',sans-serif" font-size="72" font-weight="bold" fill="#330033" filter="url(#wordart-shadow)">
+          <textPath href="#wordart-arc" startOffset="50%" text-anchor="middle">HOLMENKOLLSTAFETTEN</textPath>
+        </text>
+        <!-- Rainbow fill -->
+        <text font-family="Impact,'Arial Black',sans-serif" font-size="72" font-weight="bold" fill="url(#wordart-rainbow)" stroke="#222" stroke-width="1.5">
+          <textPath href="#wordart-arc" startOffset="50%" text-anchor="middle">HOLMENKOLLSTAFETTEN</textPath>
+        </text>
+        <!-- Glossy shine overlay -->
+        <text font-family="Impact,'Arial Black',sans-serif" font-size="72" font-weight="bold" fill="url(#wordart-shine)">
+          <textPath href="#wordart-arc" startOffset="50%" text-anchor="middle">HOLMENKOLLSTAFETTEN</textPath>
+        </text>
+      </svg>
+      <svg class="wordart-lede" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg" aria-label="15 etapper. Ett lag. Ønsk deg etappen som passer deg best.">
+        <defs>
+          <path id="wave1" d="M 20,50 C 120,20 200,70 300,40 C 400,10 500,65 600,35 C 700,10 760,50 780,45" fill="none"/>
+          <path id="wave2" d="M 20,130 C 100,100 180,145 280,110 C 380,80 460,140 560,105 C 660,75 740,125 780,115" fill="none"/>
+        </defs>
+        <!-- Shadow/doubled text -->
+        <text font-family="Impact,'Arial Black',sans-serif" font-size="36" font-weight="bold" font-style="italic" fill="#000084">
+          <textPath href="#wave1" startOffset="50%" text-anchor="middle" dx="2" dy="2">15 etapper. Ett lag.</textPath>
+        </text>
+        <text font-family="Impact,'Arial Black',sans-serif" font-size="30" font-weight="bold" font-style="italic" fill="#000084">
+          <textPath href="#wave2" startOffset="50%" text-anchor="middle" dx="2" dy="2">Ønsk deg etappen som passer deg best.</textPath>
+        </text>
+        <!-- Front text -->
+        <text font-family="Impact,'Arial Black',sans-serif" font-size="36" font-weight="bold" font-style="italic" fill="#39c9fe">
+          <textPath href="#wave1" startOffset="50%" text-anchor="middle">15 etapper. Ett lag.</textPath>
+        </text>
+        <text font-family="Impact,'Arial Black',sans-serif" font-size="30" font-weight="bold" font-style="italic" fill="#39c9fe">
+          <textPath href="#wave2" startOffset="50%" text-anchor="middle">Ønsk deg etappen som passer deg best.</textPath>
+        </text>
+      </svg>
       <div class="hero-meta">
         <span class="pill">4 uker igjen</span>
         <span class="pill">15 løpere</span>
